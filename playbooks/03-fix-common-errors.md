@@ -2,6 +2,15 @@
 
 遇到报错不要慌，90% 的问题都在这里。
 
+## Claude Code 桌面版 403（Pro Plan 用户专项）
+
+**如果你用的是 Claude Code 桌面版 + Claude Pro Plan，看这里 →**
+[Claude Code Pro Plan 403 专项修复指南](./04-claude-code-pro-403-fix.md)
+
+**最快解法**：打开终端，运行 `claude login`，用 claude.ai 账号授权即可。
+
+---
+
 ## 403 Forbidden（最常见）
 
 403 表示"没有权限"。以下是最常见的 5 种原因和解法：
