@@ -52,6 +52,7 @@
 - [模型、渠道、技能怎么选](./resources/02-model-channel-skill-guide.md)
 - [低成本稳定运行（精简版）](./playbooks/01-low-cost-stable-run.md)
 - [安全与权限边界（非技术版）](./playbooks/02-safe-usage-boundary.md)
+- [常见错误排查（403等）](./playbooks/03-fix-common-errors.md)
 
 ## 投稿与共建
 
