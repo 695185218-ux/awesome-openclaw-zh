@@ -20,35 +20,58 @@ Failed to authenticate. API Error: 403
 
 ## Claude Plan 用户（直接登录，无 API Key）
 
-### 第一步：退出重新登录（最常见解法）
+> 如果你用的是**桌面客户端**（Chat + Code + Cowork 三合一），按下方桌面版步骤操作。
+> 如果是**浏览器网页版**，按网页版步骤操作。
 
-1. 在 OpenClaw 点击右上角头像 → **Logout**
-2. 清除浏览器 Cookie 和缓存（Chrome：设置 → 隐私和安全 → 清除浏览数据）
-3. 重新登录 Claude 账号
-4. 回到 cowork，重新发一条消息测试
+---
 
-### 第二步：重新授权 Cowork 连接
+### 桌面客户端
+
+#### 第一步：退出重新登录
+
+1. 点击应用内头像或菜单 → **Logout / 退出登录**
+2. 完全退出应用（Quit，不只是关窗口）
+3. 重新打开应用，重新登录 Claude 账号
+4. 回到 Cowork，重新发一条消息测试
+
+#### 第二步：清除应用本地数据
+
+如果重登后仍报 403，说明本地缓存的 Token 已失效：
+
+- **macOS**：在 Finder 按 `Cmd+Shift+G`，进入 `~/Library/Application Support/`，找到应用文件夹，删除其中的 `Cache` 或 `Session` 目录
+- **Windows**：进入 `%APPDATA%\` 或 `%LOCALAPPDATA%\`，找到应用文件夹，删除 Cache 目录
+- 删除后重新启动应用并登录
+
+#### 第三步：重新授权 Cowork 连接
 
 1. 进入 **Settings → Cowork**
 2. 找到当前连接，点击 **Disconnect**
 3. 等待 5 秒，点击 **Connect / Re-authorize**
 4. 按提示重新完成 Claude 账号授权
 
-### 第三步：确认 Claude Plan 包含 Cowork 功能
-
-`Request not allowed` 有时表示当前套餐不支持 cowork：
+#### 第四步：确认 Claude Plan 包含 Cowork 功能
 
 - Claude Pro 和 Team 套餐支持 cowork
 - Claude Free 套餐**不支持** cowork
 - 进入 [claude.ai](https://claude.ai) → **Settings → Plan** 确认当前套餐
 
-### 第四步：换浏览器或无痕模式测试
+---
 
-排除浏览器扩展干扰：
+### 网页版
 
-1. 用无痕/隐私窗口重新登录
-2. 或换 Chrome / Firefox 等其他浏览器测试
-3. 如果无痕可以用，说明是某个浏览器扩展在拦截请求（常见：广告拦截器、VPN 插件）
+#### 第一步：退出重新登录
+
+1. 在 OpenClaw 点击右上角头像 → **Logout**
+2. 清除浏览器 Cookie 和缓存（Chrome：设置 → 隐私和安全 → 清除浏览数据）
+3. 重新登录 Claude 账号
+
+#### 第二步：重新授权 Cowork 连接
+
+同桌面版第三步。
+
+#### 第三步：换浏览器或无痕模式测试
+
+如果无痕窗口能用，说明是浏览器扩展在拦截（广告屏蔽插件、VPN 插件最常见）。
 
 ---
 
@@ -74,11 +97,12 @@ Failed to authenticate. API Error: 403
 
 | # | 我的情况 | 先做这个 |
 |---|---|---|
-| Claude Plan 直接登录 | 退出 → 清缓存 → 重登 |
+| Claude Plan 桌面客户端 | 退出 → 完全关闭应用 → 重登 |
+| Claude Plan 网页版 | 退出 → 清浏览器缓存 → 重登 |
 | Claude Free 套餐 | 升级到 Pro/Team |
 | API Key 登录 | 后台重新 Connect |
 | 之前能用，突然不行 | 退出重登 + 重新授权 |
-| 无痕模式能用 | 检查浏览器扩展 |
+| 网页版无痕模式能用 | 检查浏览器扩展 |
 
 ---
 
