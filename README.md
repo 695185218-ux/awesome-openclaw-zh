@@ -55,6 +55,7 @@
 - [常见错误排查（403等）](./playbooks/03-fix-common-errors.md)
 - [重新安装 Codex](./playbooks/04-reinstall-codex.md)
 - [Mac AI 开发环境完整搭建（2026版）](./playbooks/05-mac-ai-dev-setup.md)
+- [修复 Cowork 403：Request not allowed](./playbooks/06-fix-cowork-403.md)
 
 ## 投稿与共建
 
