@@ -45,6 +45,22 @@ Claude Code 桌面版需要通过以下两种方式之一认证，**缺少任何
 > # 或在 Windows 系统环境变量中删除该变量
 > ```
 
+#### 遇到 401 "OAuth token has expired"？
+
+OAuth token 有有效期，过期后需要重新登录。解决方法：
+
+```bash
+claude login
+```
+
+或在 Claude Code 界面内输入：
+
+```
+/login
+```
+
+重新授权一次即可获得新 token。**这不是 Pro 账号的问题，只是 token 自然失效，重新登录就好。**
+
 ---
 
 ### 方案 B：使用 API Key（开发者路线）
