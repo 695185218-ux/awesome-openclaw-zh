@@ -54,6 +54,7 @@
 - [安全与权限边界（非技术版）](./playbooks/02-safe-usage-boundary.md)
 - [常见错误排查（403等）](./playbooks/03-fix-common-errors.md)
 - [重新安装 Codex](./playbooks/04-reinstall-codex.md)
+- [Mac AI 开发环境完整搭建（2026版）](./playbooks/05-mac-ai-dev-setup.md)
 
 ## 投稿与共建
 
