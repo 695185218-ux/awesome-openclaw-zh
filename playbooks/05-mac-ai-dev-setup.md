@@ -267,6 +267,28 @@ AI 会分析架构 → 生成任务 → 自动改代码。
 
 ---
 
+## 一键安装脚本（第3步到第6步）
+
+不想一条条复制命令？直接运行这个脚本：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/your-org/awesome-openclaw-zh/main/quickstart/mac-ai-setup.sh)
+```
+
+或者下载脚本后运行：
+
+```bash
+# 下载脚本
+curl -O https://raw.githubusercontent.com/your-org/awesome-openclaw-zh/main/quickstart/mac-ai-setup.sh
+
+# 运行
+bash mac-ai-setup.sh
+```
+
+脚本会自动完成：Codex CLI 安装 → API Key 配置 → Cursor IDE → Playwright → Stagehand
+
+---
+
 ## 遇到问题？
 
 | 报错 | 原因 | 解法 |
